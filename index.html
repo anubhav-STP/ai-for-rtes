@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for RTEs - Free Metrics for Release Train Engineers</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #1a1a2e; line-height: 1.7; background: #fff;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white; text-align: center; padding: 80px 20px 60px;
+        }
+        .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 16px; }
+        .hero .tagline { font-size: 20px; color: #94a3b8; max-width: 600px; margin: 0 auto 40px; }
+        .hero .trust { font-size: 14px; color: #64748b; margin-top: 20px; }
+
+        .download-btn {
+            display: inline-block; padding: 18px 48px; background: #e94560;
+            color: white; text-decoration: none; border-radius: 8px;
+            font-size: 18px; font-weight: 600; transition: all 0.2s;
+        }
+        .download-btn:hover { background: #d63851; transform: translateY(-2px); }
+
+        /* Steps */
+        .steps { max-width: 800px; margin: 0 auto; padding: 80px 20px; }
+        .steps h2 { text-align: center; font-size: 32px; margin-bottom: 50px; }
+
+        .step {
+            display: flex; gap: 30px; margin-bottom: 50px; align-items: flex-start;
+        }
+        .step-number {
+            width: 50px; height: 50px; min-width: 50px; border-radius: 50%;
+            background: #0f3460; color: white; display: flex; align-items: center;
+            justify-content: center; font-size: 22px; font-weight: 700;
+        }
+        .step-content h3 { font-size: 20px; margin-bottom: 8px; }
+        .step-content p { color: #6b7280; font-size: 16px; }
+
+        /* Reports */
+        .reports { background: #f8fafc; padding: 80px 20px; }
+        .reports h2 { text-align: center; font-size: 32px; margin-bottom: 16px; }
+        .reports .subtitle { text-align: center; color: #6b7280; margin-bottom: 50px; font-size: 16px; }
+
+        .report-grid {
+            max-width: 1000px; margin: 0 auto;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;
+        }
+        .report-card {
+            background: white; padding: 28px; border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        .report-card h3 { font-size: 18px; margin-bottom: 10px; color: #0f3460; }
+        .report-card p { color: #6b7280; font-size: 15px; }
+
+        /* Privacy */
+        .privacy {
+            max-width: 800px; margin: 0 auto; padding: 80px 20px; text-align: center;
+        }
+        .privacy h2 { font-size: 28px; margin-bottom: 20px; }
+        .privacy p { color: #6b7280; font-size: 16px; margin-bottom: 12px; }
+        .privacy-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+            margin-top: 40px;
+        }
+        .privacy-item { text-align: center; }
+        .privacy-icon { font-size: 36px; margin-bottom: 12px; }
+        .privacy-item h4 { margin-bottom: 6px; }
+        .privacy-item p { font-size: 14px; }
+
+        /* Disclaimer */
+        .disclaimer {
+            background: #fefce8; border-top: 1px solid #fde68a;
+            padding: 30px 20px; text-align: center;
+        }
+        .disclaimer p { max-width: 700px; margin: 0 auto; color: #92400e; font-size: 14px; }
+
+        /* Footer */
+        .footer {
+            background: #1a1a2e; color: #64748b; text-align: center;
+            padding: 40px 20px; font-size: 14px;
+        }
+        .footer a { color: #94a3b8; }
+
+        /* FAQ */
+        .faq { max-width: 800px; margin: 0 auto; padding: 80px 20px; }
+        .faq h2 { text-align: center; font-size: 32px; margin-bottom: 40px; }
+        .faq-item { margin-bottom: 30px; }
+        .faq-item h3 { font-size: 17px; margin-bottom: 8px; color: #0f3460; }
+        .faq-item p { color: #6b7280; font-size: 15px; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .hero .tagline { font-size: 16px; }
+            .step { flex-direction: column; gap: 15px; }
+            .privacy-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>AI for Release Train Engineers</h1>
+    <p class="tagline">
+        Get velocity, scope change, cycle time, and team metrics from your ALM export.
+        Free. Open source. Runs on your machine.
+    </p>
+    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="ai-for-rtes-v1.zip" class="download-btn" download>
+            Download for Mac
+        </a>
+        <a href="ai-for-rtes-v1.zip" class="download-btn" download>
+            Download for Windows
+        </a>
+    </div>
+    <p class="trust">
+        No sign-up. No cloud. Your data never leaves your computer.
+    </p>
+</div>
+
+<!-- Steps -->
+<div class="steps">
+    <h2>How It Works</h2>
+
+    <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+            <h3>Download and unzip</h3>
+            <p>Download the toolkit. Unzip it anywhere on your computer. No install needed.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+            <h3>Double-click START</h3>
+            <p>Double-click <strong>START_HERE.command</strong> (Mac) or <strong>START_HERE.bat</strong> (Windows) to set everything up. This only takes a minute the first time.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+            <h3>Export your data</h3>
+            <p>Export your work items from your ALM tool (Jira, Rally, Azure DevOps, or any other tool) as a CSV or Excel file.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+            <h3>Drop the file and confirm columns</h3>
+            <p>Put the exported file in the <strong>input</strong> folder. The toolkit reads your columns and matches them automatically. Just press <strong>Enter</strong> to confirm. This only happens once — it remembers your choice for next time.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+            <h3>See your reports</h3>
+            <p>Your dashboard opens in the browser with all your metrics. Next time, just drop a new file — no setup needed, reports update automatically.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Reports -->
+<div class="reports">
+    <h2>Reports You Get</h2>
+    <p class="subtitle">The toolkit generates reports based on what is in your data. More columns = more reports.</p>
+
+    <div class="report-grid">
+        <div class="report-card">
+            <h3>Velocity</h3>
+            <p>Story points completed per team per sprint. See trends and compare teams side by side.</p>
+        </div>
+        <div class="report-card">
+            <h3>Scope Change</h3>
+            <p>How much work was added or removed after commitment. Track scope creep across sprints.</p>
+        </div>
+        <div class="report-card">
+            <h3>Cycle Time</h3>
+            <p>How long items take from creation to completion. Average, median, and distribution by team.</p>
+        </div>
+        <div class="report-card">
+            <h3>Epic / Feature Progress</h3>
+            <p>Completion status of each epic or feature. See which ones are on track and which are behind.</p>
+        </div>
+        <div class="report-card">
+            <h3>Work Distribution</h3>
+            <p>Breakdown of items by status, type, and priority. Understand where work is stuck.</p>
+        </div>
+        <div class="report-card">
+            <h3>Team Comparison</h3>
+            <p>Side-by-side view of all teams. Points delivered, completion rates, and average item size.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Privacy -->
+<div class="privacy">
+    <h2>Your Data Stays on Your Machine</h2>
+    <p>Everything runs locally on your computer. No internet connection needed after download.</p>
+
+    <div class="privacy-grid">
+        <div class="privacy-item">
+            <div class="privacy-icon">&#128274;</div>
+            <h4>No cloud</h4>
+            <p>The toolkit runs 100% on your machine. Nothing is sent anywhere.</p>
+        </div>
+        <div class="privacy-item">
+            <div class="privacy-icon">&#128269;</div>
+            <h4>Open source</h4>
+            <p>All the code is visible. You can inspect every line before running it.</p>
+        </div>
+        <div class="privacy-item">
+            <div class="privacy-icon">&#9889;</div>
+            <h4>Works offline</h4>
+            <p>No internet needed. Export your data, drop it in, get your reports.</p>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ -->
+<div class="faq">
+    <h2>Common Questions</h2>
+
+    <div class="faq-item">
+        <h3>Which ALM tools does this work with?</h3>
+        <p>Any tool that can export data as CSV or Excel. This includes Jira, Rally, Azure DevOps, VersionOne, Targetprocess, and many others. The toolkit reads your column names and maps them automatically.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Do I need to know Python?</h3>
+        <p>No. You just double-click START_HERE and drop files into a folder. Python is needed on your computer, but you do not need to write any code.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>What if my columns have different names?</h3>
+        <p>The toolkit automatically matches your columns to the fields it needs. For example, "Story Points", "SP", "Estimate", and "Points" all map to the same thing. If the auto-match is wrong, you can fix it — and it remembers your choice.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Does this work on Windows and Mac?</h3>
+        <p>Yes. On Mac, double-click START_HERE.command. On Windows, double-click START_HERE.bat. Both do the same thing.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Can I use this at work?</h3>
+        <p>This toolkit is provided as a free learning and personal productivity tool. Check with your organization's policies before using it with work data. The code is open source so your team can review it.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>How do I install Python?</h3>
+        <p>Go to <strong>python.org/downloads</strong> and download Python 3. On Windows, make sure to check "Add Python to PATH" during installation. On Mac, Python 3 may already be installed.</p>
+    </div>
+</div>
+
+<!-- Disclaimer -->
+<div class="disclaimer">
+    <p>
+        <strong>Disclaimer:</strong> This is a free, open-source learning and personal productivity tool.
+        It is not affiliated with or endorsed by Scaled Agile, Atlassian, or any ALM vendor.
+        Use at your own discretion. Review your organization's policies before using with work data.
+    </p>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>AI for RTEs — Free metrics for Release Train Engineers</p>
+    <p style="margin-top: 8px;">
+        <a href="https://github.com/anubhav-STP/ai-for-rtes">View on GitHub</a>
+    </p>
+</div>
+
+</body>
+</html>
